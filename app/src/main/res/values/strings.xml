@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyForm</string>
+    <string name="my_form">MY FORM</string>
+    <string name="your_name">Your name</string>
+    <string name="your_npm">NPM</string>
+    <string name="your_password">Password</string>
+</resources>

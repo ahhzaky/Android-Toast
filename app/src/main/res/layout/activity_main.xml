@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_base"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/my_form"
+        android:textColor="@color/text_form_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_name"
+        android:layout_width="345dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:inputType="text"
+        android:padding="15dp"
+        android:hint="@string/your_name"
+        android:background="@color/column_base"
+        android:textColorHint="@color/home_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/id_npm"
+        android:layout_width="345dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/column_base"
+        android:hint="@string/your_npm"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="@color/home_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_name" />
+
+    <EditText
+        android:id="@+id/id_password"
+        android:layout_width="345dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/column_base"
+        android:hint="@string/your_password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColorHint="@color/home_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_npm" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@color/column_base"
+        android:text="SEND"
+        android:onClick="tombolKirim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
